@@ -84,3 +84,22 @@ p > strong{
 address > a {
     background-color: violet;
 }
+/* SELETOR UNIVERSAL: * */
+/* Espaçamentos
+            Determinado pela folha de estilos do navegador
+        Uma ordem para todas as TAGS.
+        Não é tão usado
+        Pode ser usado com classe
+        CSS reset
+    
+    
+    */
+*{
+    /*margin: 0;
+    padding: 0;*/
+}
+
+/* Com classe: */
+*.button{
+    padding: 20px;
+}
