@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+    
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: "Ojuju", sans-serif;
+            margin: 0;
+            
+        }
+        .title{
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-left: 10px;
+            font-size: 20px;
+        }
+        .input:focus{
+            background-color: wheat;
+        }
+        .input{
+            display: block;
+            width: 820px;
+            padding: 15px;
+            margin: 5px;
+            margin-top: 0px;
+            margin-bottom: 30px;
+            border-style: inset;
+            border-width: 5px;
+            border-radius: 10px;
+        }
+        fieldset{
+            padding: 30px;
+            width: 793px;
+            margin-top: 20px;
+            border-style: inset;
+            border-width: 5px;
+            border-radius: 10px;
+        }
+        fieldset label{
+            font-size: 20px;
+        }
+        legend{
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 26px !important;
+        }
+        .button{
+            background-color: black;
+            color: white;
+            width: 150px;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .button:hover{
+            background-color: white;
+            color: black;
+        }
+        legend{
+            font-size: 20px;
+        }
+        h1{
+            font-weight: 900;
+            letter-spacing: 2px;
+            font-size: 55px;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        .select{
+            padding-right: 70px;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastre-se</h1>
+
+    <form action="http://hub.fatecrl.edu.br/sobrino/recebe-v2.php" method="post">
+        
+            <label for="email" class="title"> Email </label>
+            <input type="email" name="email" id="email" required placeholder="digite seu email" class="input" minlength="8">
+        
+      
+            <label for="password" class="title"> Senha </label> 
+            <input type="password" name="password" id="password" required placeholder="digite sua senha" minlength="8" maxlength="15" class="input">
+     
+        
+        <fieldset>
+            <legend class="title">Deseja assinar nosso boletim</legend>
+            <span class="select">
+            <input type="radio" name="select" id="selectsim" value="sim" class="radio">
+                <label for="selectsim">Sim</label>
+            </span>
+            <span class="select">
+            <input type="radio" name="select" id="selectnao" value="nao" class="radio">
+                <label for="selectnao">Não</label>
+            </span>
+        </fieldset> 
+        <input type="submit" value="confirmar" class="button"> 
+    </form>
+</body>
+</html>
