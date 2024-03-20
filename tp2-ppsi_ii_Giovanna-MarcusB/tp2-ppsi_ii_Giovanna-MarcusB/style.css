@@ -44,7 +44,7 @@ a:hover{ /*Pseudo-classe*/
     transition: 400ms;
     font-size: 20px;
 }
-#button{
+.button{
     color: white;
     padding: 15px;
     border-style: solid;
@@ -55,7 +55,7 @@ a:hover{ /*Pseudo-classe*/
     text-decoration: none;
     
 }
-li,ul{
+li ul{
     font-weight: 200;
     letter-spacing: 2px;
     line-height: 25px;
@@ -65,4 +65,22 @@ li,ul{
     color: brown;
     letter-spacing: 10px;
     font-weight: 90;
+}
+/* SELETORES AVANÇADOS */
+/*Strong descendente do adress recebe cor verde*/
+/* Seletor de descendente: espaço */
+/*Mas se for filho: >*/
+
+address > strong{
+    /*Strong descendente do adress recebe cor verde
+    Strong é filho do Adress*/
+    background-color: rgb(81, 255, 0);
+}
+
+p > strong{
+    background-color: rgb(255, 196, 0);
+}
+/* A filho do adress */
+address > a {
+    background-color: violet;
 }
